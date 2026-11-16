@@ -2,10 +2,17 @@ import { mountTemplate, loadJSON } from '../../js/loader.js';
 import { render as renderSearchBar } from '../../components/search-bar/search-bar.js';
 
 export async function render(target) {
+  if (!target) return;
+
   await mountTemplate(target, './views/projects/projects.html', './views/projects/projects.css');
 
-  const projects = await loadJSON('./data/projects.json');
-  
+  const [projects, iconsData] = await Promise.all([
+    loadJSON('./data/projects.json'),
+    loadJSON('./data/icons.json')
+  ]);
+
+  const gearSvg = iconsData?.categories?.gear || '';
+
   let currentSearchQuery = '';
   let currentCategory = 'Todos';
   let showOnlyFeatured = false;
@@ -46,9 +53,9 @@ export async function render(target) {
       const card = document.createElement('article');
       card.className = 'project-card';
 
-      let mediaHTML = p.image 
+      const mediaHTML = p.image 
         ? `<img src="${p.image}" alt="${p.title}" class="project-img" loading="lazy" />`
-        : `<div class="project-icon-fallback" title="Sistema / Código">⚙</div>`;
+        : `<div class="project-icon-fallback" title="Sistema / Código">${gearSvg}</div>`;
 
       let linksHTML = '';
       if (p.githubUrl) linksHTML += `<a href="${p.githubUrl}" target="_blank" rel="noopener" class="project-link-btn">GitHub ↗</a>`;

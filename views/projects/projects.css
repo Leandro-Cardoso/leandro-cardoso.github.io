@@ -130,7 +130,7 @@
   border-color: var(--glass-border-hover);
 }
 
-/* Header do Card (Foto ou Ícone Fallback de Engrenagem) */
+/* Header do Card (Foto ou SVG Fallback de Engrenagem) */
 .project-media {
   width: 100%;
   height: 180px;
@@ -149,11 +149,26 @@
   object-fit: cover;
 }
 
-/* Ícone de Engrenagem Fallback no mesmo tom de amarelo da página */
+/* Container e dimensionamento do SVG de Engrenagem Fallback */
 .project-icon-fallback {
-  font-size: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--accent-yellow);
-  opacity: 0.9;
+  opacity: 0.85;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.project-icon-fallback svg {
+  width: 72px;
+  height: 72px;
+  stroke: var(--accent-yellow);
+  stroke-width: 1.5;
+}
+
+.project-card:hover .project-icon-fallback {
+  transform: rotate(30deg) scale(1.05);
+  opacity: 1;
 }
 
 /* Estrela de Destaque posicionada exatamente na ponta do topo direito */
@@ -171,7 +186,7 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  color: var(--accent-yellow); /* Usa rigorosamente a cor amarela da página */
+  color: var(--accent-yellow);
   z-index: 2;
   box-shadow: var(--shadow-sm);
 }

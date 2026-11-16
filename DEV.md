@@ -2,7 +2,6 @@
 
 ## ToDo
 
-* Ajustar home
 * Criar sobre
 * Criar blog de tecnologia e programacão
 
