@@ -1,0 +1,9 @@
+{
+  "name": "Leandro Cardoso",
+  "title": "Engenheiro de Software",
+  "description": "Focado em arquitetura modular, sistemas de alta performance e IA. Atuo desde a modelagem de infraestrutura e desenvolvimento full-stack com Rust, Python e Django até a criação de interfaces web reativas com JavaScript e Vue.js. Construo desde aplicações escaláveis até motores gráficos de baixo nível sem dependências externas.",
+  "primaryActionText": "Explorar Projetos",
+  "primaryActionRoute": "#/projects",
+  "secondaryActionText": "Entrar em Contato",
+  "secondaryActionRoute": "#/contacts"
+}
