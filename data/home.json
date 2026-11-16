@@ -1,31 +1,29 @@
 {
-  "badge": "DISPONÍVEL PARA PROJETOS & CONSULTORIA",
-  "greeting": "Olá, eu sou",
-  "name": "Leandro Cardoso",
-  "role": "Engenheiro de Software",
-  "ctaPrimary": {
-    "label": "Explorar Projetos",
-    "route": "#/projetos"
-  },
-  "ctaSecondary": {
-    "label": "Entrar em Contato",
-    "route": "#/contato"
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Leandro Cardoso",
+    "subtitle": "Engenheiro de Software",
+    "description": "Focado em arquitetura modular, sistemas de alta performance e desenvolvimento full-stack. Construo desde aplicações web escaláveis até motores gráficos de baixo nível sem dependências externas.",
+    "primaryActionText": "Explorar Projetos",
+    "primaryActionRoute": "#/projects",
+    "secondaryActionText": "Entrar em Contato",
+    "secondaryActionRoute": "#/contact"
   },
   "highlights": [
     {
-      "label": "ARQUITETURA",
-      "value": "Modular & Clean",
-      "accent": "yellow"
+      "icon": "⚡",
+      "title": "Zero Dependências",
+      "description": "Arquitetura limpa focada em engenharia nativa, ES Modules e performance máxima."
     },
     {
-      "label": "STACK PRINCIPAL",
-      "value": "Rust · Python · JS",
-      "accent": "orange"
+      "icon": "🛠️",
+      "title": "Full-Stack & Systems",
+      "description": "Desenvolvimento robusto em Python (Django/Scikit-learn), Rust e JavaScript."
     },
     {
-      "label": "INFRAESTRUTURA",
-      "value": "Linux · Docker · SQL",
-      "accent": "yellow"
+      "icon": "🌐",
+      "title": "Open Source",
+      "description": "Repositórios públicos e documentações voltados para automação e motores 2D."
     }
   ]
 }

@@ -2,11 +2,12 @@
 
 ## ToDo
 
-* Criar projetos
 * Criar contatos
 * Ajustar home
 * Criar sobre
 * Criar blog de tecnologia e programacão
+
+* Adicionar projetos
 
 ## Teste
 

@@ -1,52 +1,39 @@
-// views/home/home.js
-import { mountTemplate, loadJSON, loadTXT } from '../../js/loader.js';
+import { mountTemplate, loadJSON } from '../../js/loader.js';
 
 export async function render(target) {
-  // 1. Injeta o esqueleto HTML e registra o CSS específico da view
+  if (!target) return;
+
   await mountTemplate(target, './views/home/home.html', './views/home/home.css');
 
-  // 2. Busca os dados estruturados (JSON) e o texto corrido (TXT) em paralelo
-  const [data, bioText] = await Promise.all([
-    loadJSON('./data/home.json'),
-    loadTXT('./data/textos/home-bio.txt')
-  ]);
+  // Carrega o conteúdo textual desacoplado
+  const data = await loadJSON('./data/home.json');
 
-  // 3. Preenche os elementos do Hero
-  target.querySelector('#home-badge').textContent = data.badge;
-  target.querySelector('#home-greeting').textContent = data.greeting;
-  target.querySelector('#home-name').textContent = data.name;
-  target.querySelector('#home-role').textContent = data.role;
+  // Preenche o Hero
+  target.querySelector('#hero-greeting').textContent = data.hero.greeting;
+  target.querySelector('#hero-name').textContent = data.hero.name;
+  target.querySelector('#hero-subtitle').textContent = data.hero.subtitle;
+  target.querySelector('#hero-description').textContent = data.hero.description;
 
-  // Converte parágrafos separados por linha em branco no TXT em tags <p>
-  const bioContainer = target.querySelector('#home-bio');
-  bioText
-    .trim()
-    .split(/\n\s*\n/)
-    .forEach((paragraph) => {
-      const p = document.createElement('p');
-      p.textContent = paragraph.trim();
-      bioContainer.appendChild(p);
-    });
+  const btnPrimary = target.querySelector('#hero-btn-primary');
+  btnPrimary.textContent = data.hero.primaryActionText;
+  btnPrimary.href = data.hero.primaryActionRoute;
 
-  // 4. Configura os botões de ação
-  const ctaPrimary = target.querySelector('#home-cta-primary');
-  ctaPrimary.textContent = data.ctaPrimary.label;
-  ctaPrimary.href = data.ctaPrimary.route;
+  const btnSecondary = target.querySelector('#hero-btn-secondary');
+  btnSecondary.textContent = data.hero.secondaryActionText;
+  btnSecondary.href = data.hero.secondaryActionRoute;
 
-  const ctaSecondary = target.querySelector('#home-cta-secondary');
-  ctaSecondary.textContent = data.ctaSecondary.label;
-  ctaSecondary.href = data.ctaSecondary.route;
+  // Renderiza os cards de destaque inferiores dinamicamente
+  const highlightsGrid = target.querySelector('#home-highlights-grid');
+  highlightsGrid.innerHTML = '';
 
-  // 5. Renderiza os cards de destaque
-  const highlightsContainer = target.querySelector('#home-highlights');
-  data.highlights.forEach((item) => {
-    const card = document.createElement('article');
+  data.highlights.forEach(item => {
+    const card = document.createElement('div');
     card.className = 'highlight-card';
-    card.setAttribute('data-accent', item.accent || 'yellow');
     card.innerHTML = `
-      <span class="highlight-label">${item.label}</span>
-      <strong class="highlight-value">${item.value}</strong>
+      <div class="highlight-icon">${item.icon}</div>
+      <h3 class="highlight-title">${item.title}</h3>
+      <p class="highlight-desc">${item.description}</p>
     `;
-    highlightsContainer.appendChild(card);
+    highlightsGrid.appendChild(card);
   });
 }

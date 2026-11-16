@@ -1,18 +1,18 @@
 {
   "version": "2.0.0",
-  "title": "Leandro Cardoso DEV",
+  "title": "Leandro Cardoso | DEV",
   "defaultRoute": "/",
   "routes": {
     "/": {
       "view": "home",
       "pageTitle": "Início | Leandro Cardoso DEV"
     },
-    "/projetos": {
-      "view": "projetos",
+    "/projects": {
+      "view": "projects",
       "pageTitle": "Projetos | Leandro Cardoso DEV"
     },
-    "/contato": {
-      "view": "contato",
+    "/contact": {
+      "view": "contact",
       "pageTitle": "Contato | Leandro Cardoso DEV"
     }
   }

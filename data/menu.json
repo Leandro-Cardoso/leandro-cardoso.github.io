@@ -6,12 +6,12 @@
   },
   {
     "label": "Projetos",
-    "route": "/projetos",
-    "href": "#/projetos"
+    "route": "/projects",
+    "href": "#/projects"
   },
   {
     "label": "Contato",
-    "route": "/contato",
-    "href": "#/contato"
+    "route": "/contact",
+    "href": "#/contact"
   }
 ]

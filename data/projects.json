@@ -1,0 +1,44 @@
+[
+  {
+    "id": "oceanica",
+    "title": "Oceanica ERP",
+    "description": "Sistema ERP modular desenvolvido em Django para construtoras, cobrindo engenharia, compras (MapaCotacaoView), financeiro e controle de inadimplência.",
+    "category": "Full-Stack",
+    "tags": ["Python", "Django", "PostgreSQL", "JavaScript"],
+    "image": "",
+    "icon": "database",
+    "featured": true,
+    "githubUrl": "https://github.com/Leandro-Cardoso/oceanica",
+    "liveUrl": "",
+    "downloadUrl": "",
+    "docsUrl": ""
+  },
+  {
+    "id": "tiles-gear",
+    "title": "Tiles Gear v1.0",
+    "description": "Motor gráfico 2D top-down em Rust sem dependências externas, projetado para renderização de camadas de tiles com arquitetura modular inspirada em Stardew Valley.",
+    "category": "Rust / Engine",
+    "tags": ["Rust", "GameDev", "Low-Level"],
+    "image": "",
+    "icon": "cpu",
+    "featured": true,
+    "githubUrl": "https://github.com/Leandro-Cardoso/tiles-gear",
+    "liveUrl": "",
+    "downloadUrl": "https://github.com/Leandro-Cardoso/tiles-gear/releases",
+    "docsUrl": "https://github.com/Leandro-Cardoso/tiles-gear/wiki"
+  },
+  {
+    "id": "pacman-ia",
+    "title": "Pacman com IA",
+    "description": "Jogo em Python com Pygame que coleta telemetria de movimento em CSV para treinar classificadores Scikit-learn (DecisionTree/RandomForest) para prever comportamentos dos fantasmas.",
+    "category": "AI & Python",
+    "tags": ["Python", "Pygame", "Scikit-learn", "Pandas"],
+    "image": "",
+    "icon": "terminal",
+    "featured": false,
+    "githubUrl": "https://github.com/Leandro-Cardoso/univassouras-ia-pacman",
+    "liveUrl": "",
+    "downloadUrl": "https://github.com/Leandro-Cardoso/univassouras-ia-pacman/releases",
+    "docsUrl": ""
+  }
+]

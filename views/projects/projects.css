@@ -1,0 +1,264 @@
+.projects-view {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-10) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight), var(--shadow-sm);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+}
+
+.projects-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.projects-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+.projects-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.filter-chip {
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--bg-surface);
+  border: var(--border-thin) solid var(--glass-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-chip:hover {
+  background-color: var(--bg-surface-hover);
+  color: var(--text-primary);
+}
+
+.filter-chip.is-active {
+  background-color: var(--accent-yellow-subtle);
+  border-color: var(--accent-yellow);
+  color: var(--accent-yellow);
+  font-weight: 600;
+}
+
+.filter-favorites-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--bg-surface);
+  border: var(--border-thin) solid var(--glass-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-favorites-btn:hover,
+.filter-favorites-btn.is-active {
+  background-color: var(--accent-yellow-subtle);
+  border-color: var(--accent-yellow);
+  color: var(--accent-yellow);
+}
+
+/* Grid de Cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-6);
+}
+
+.project-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--glass-border-hover);
+}
+
+/* Header do Card (Foto ou Ícone Fallback de Engrenagem) */
+.project-media {
+  width: 100%;
+  height: 180px;
+  background-color: var(--bg-input);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--border-thin) solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ícone de Engrenagem Fallback no mesmo tom de amarelo da página */
+.project-icon-fallback {
+  font-size: 10rem;
+  color: var(--accent-yellow);
+  opacity: 0.9;
+}
+
+/* Estrela de Destaque posicionada exatamente na ponta do topo direito */
+.project-featured-badge {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  width: 32px;
+  height: 32px;
+  background-color: rgba(9, 10, 13, 0.75);
+  backdrop-filter: blur(8px);
+  border: var(--border-thin) solid var(--glass-border);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--accent-yellow); /* Usa rigorosamente a cor amarela da página */
+  z-index: 2;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Conteúdo do Card */
+.project-body {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-3);
+}
+
+.project-category-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-card-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.project-card-desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.project-tag-pill {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  background-color: var(--bg-input);
+  color: var(--text-muted);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-xs);
+  border: var(--border-thin) solid var(--border-subtle);
+}
+
+/* Rodapé do Card com Ações Dinâmicas */
+.project-footer {
+  padding: var(--space-4) var(--space-6);
+  background-color: rgba(0, 0, 0, 0.15);
+  border-top: var(--border-thin) solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-input);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-xs);
+  border: var(--border-thin) solid var(--glass-border);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.project-link-btn:hover {
+  background-color: var(--bg-surface-hover);
+  color: var(--accent-yellow);
+  border-color: var(--accent-yellow);
+}
+
+.projects-empty {
+  text-align: center;
+  padding: var(--space-12);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+}
