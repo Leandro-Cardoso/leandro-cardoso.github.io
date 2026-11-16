@@ -10,15 +10,9 @@
   },
   "highlights": [
     {
-      "icon": "code",
-      "title": "Zero Dependências",
-      "description": "Arquitetura limpa focada em engenharia nativa, ES Modules e performance máxima.",
-      "technologies": ["linux", "windows", "bash", "rust", "javascript", "html", "css"]
-    },
-    {
       "icon": "server",
       "title": "Full-Stack",
-      "description": "Desenvolvimento robusto em Rust, Python (Django/Scikit-learn) e JavaScript (Vue).",
+      "description": "Desenvolvimento robusto em Rust (Actix/Axum), Python (Django/Scikit-learn) e JavaScript (Vue).",
       "technologies": ["rust", "python", "django", "javascript", "vue"]
     },
     {
@@ -38,6 +32,12 @@
       "title": "DevTools",
       "description": "Automação de ambientes de desenvolvimento, versionamento distribuído, conteinerização e execução local de modelos de linguagem (LLMs).",
       "technologies": ["git", "docker", "ollama", "qwen"]
+    },
+    {
+      "icon": "code",
+      "title": "Zero Dependency",
+      "description": "Arquitetura limpa focada em engenharia nativa, ES Modules e performance máxima.",
+      "technologies": ["linux", "windows", "bash", "rust", "javascript", "html", "css"]
     }
   ]
 }

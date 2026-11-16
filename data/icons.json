@@ -6,6 +6,11 @@
     "database": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path></svg>",
     "terminal": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" y1=\"19\" x2=\"20\" y2=\"19\"></line></svg>"
   },
+  "theme": {
+    "system": "<svg class=\"theme-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\"></rect><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"></line></svg>",
+    "dark": "<svg class=\"theme-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"></path></svg>",
+    "light": "<svg class=\"theme-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"5\"></circle><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"3\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"></line><line x1=\"4.22\" y1=\"4.22\" x2=\"5.64\" y2=\"5.64\"></line><line x1=\"18.36\" y1=\"18.36\" x2=\"19.78\" y2=\"19.78\"></line><line x1=\"1\" y1=\"12\" x2=\"3\" y2=\"12\"></line><line x1=\"21\" y1=\"12\" x2=\"23\" y2=\"12\"></line><line x1=\"4.22\" y1=\"19.78\" x2=\"5.64\" y2=\"18.36\"></line><line x1=\"18.36\" y1=\"5.64\" x2=\"19.78\" y2=\"4.22\"></line></svg>"
+  },
   "contacts": {
     "github": "<svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22\"></path></svg>",
     "linkedin": "<svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"></path><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"></rect><circle cx=\"4\" cy=\"4\" r=\"2\"></circle></svg>",
@@ -18,19 +23,19 @@
     {
       "id": "rust",
       "name": "Rust",
-      "description": "APIs REST (Actix/Axum), concorrência segura, microsserviços e engines gráficas 2D de baixo nível sem dependências.",
+      "description": "APIs REST (Actix/Axum), backend, concorrência segura, aplicativos nativos, microsserviços e engines gráficas de baixo nível.",
       "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M9 16V8h4.5a2.5 2.5 0 0 1 0 5H9\"></path><path d=\"M13.5 13L16 16\"></path></svg>"
     },
     {
       "id": "python",
       "name": "Python",
-      "description": "Desenvolvimento backend, automação de rotinas, ciência de dados e algoritmos de Machine Learning com Scikit-learn.",
-      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2c-3.5 0-4 1.5-4 3.5V8h8v1.5H6.5C4.5 9.5 3 11 3 13.5S4.5 17.5 6.5 17.5H8v-2.5c0-2 1.5-3.5 3.5-3.5h5c1.5 0 2.5-1 2.5-2.5V5.5C19 3.5 17.5 2 12 2z\"></path><path d=\"M12 22c3.5 0 4-1.5 4-3.5V16H8v-1.5h9.5c2 0 3.5-1.5 3.5-4s-1.5-4-3.5-4H16v2.5c0 2-1.5 3.5-3.5 3.5h-5C6 12.5 5 13.5 5 15v3.5C5 20.5 6.5 22 12 22z\"></path></svg>"
+      "description": "Desenvolvimento backend, automação de rotinas, ciência de dados, análise de dados e algoritmos de Machine Learning com Scikit-learn.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline></svg>"
     },
     {
       "id": "django",
       "name": "Django",
-      "description": "Arquitetura de sistemas ERP corporativos modulares, ORMs complexos, painéis administrativos e APIs seguras.",
+      "description": "Sistemas modulares, ORMs complexos, painéis administrativos e APIs seguras.",
       "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 3v14a4 4 0 0 1-4 4H5\"></path><path d=\"M11 10H7a3 3 0 0 0-3 3v1a3 3 0 0 0 3 3h4\"></path><path d=\"M16 8v10a3 3 0 0 1-3 3\"></path><circle cx=\"16\" cy=\"4\" r=\"1\" fill=\"currentColor\"></circle></svg>"
     },
     {
@@ -42,7 +47,7 @@
     {
       "id": "vue",
       "name": "Vue.js",
-      "description": "Construção de interfaces web reativas, componentizadas e dashboards administrativos leves.",
+      "description": "Construção de interfaces web reativas, componentizadas e dashboards leves.",
       "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"2 4 12 21 22 4 18 4 12 14.5 6 4 2 4\"></polygon><polyline points=\"7.5 4 12 11.5 16.5 4\"></polyline></svg>"
     },
     {
@@ -66,8 +71,20 @@
     {
       "id": "sql",
       "name": "SQL",
-      "description": "Modelagem relacional normalizada, otimização de consultas e integridade transacional com PostgreSQL e SQLite.",
+      "description": "Modelagem relacional normalizada, otimização de consultas e integridade transacional com bancos relacionais.",
       "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path></svg>"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "description": "Banco de dados relacional avançado para sistemas críticos, indexação complexa, transações ACID e escalabilidade em produção.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path></svg>"
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "description": "Motor de banco de dados SQL embutido, leve e zero-configuração, ideal para aplicações locais, protótipos e sistemas embarcados.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"3\" width=\"16\" height=\"18\" rx=\"2\"></rect><line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"></line><line x1=\"4\" y1=\"15\" x2=\"20\" y2=\"15\"></line><line x1=\"9\" y1=\"3\" x2=\"9\" y2=\"21\"></line></svg>"
     },
     {
       "id": "nosql",
@@ -78,13 +95,13 @@
     {
       "id": "linux",
       "name": "Linux",
-      "description": "Administração de ambientes Arch Linux, servidores domésticos, systemd e configuração avançada de sistema.",
-      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3c-2.5 0-4 2-4 5 0 2-2 4-2 7 0 3 2.5 5 6 5s6-2 6-5c0-3-2-5-2-7 0-3-1.5-5-4-5z\"></path><circle cx=\"10.5\" cy=\"7.5\" r=\"0.8\" fill=\"currentColor\"></circle><circle cx=\"13.5\" cy=\"7.5\" r=\"0.8\" fill=\"currentColor\"></circle><path d=\"M10 10.5c1 .8 3 .8 4 0\"></path></svg>"
+      "description": "Administração de ambientes Linux, servidores domésticos, systemd e configuração avançada de sistema.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2c-2.2 0-4 1.6-4 3.5 0 1 .4 1.9 1.1 2.6C7.5 9.3 6.5 11 6.5 13c0 3.3 2.5 6 5.5 6s5.5-2.7 5.5-6c0-2-1-3.7-2.6-4.9.7-.7 1.1-1.6 1.1-2.6 0-1.9-1.8-3.5-4-3.5z\"></path><ellipse cx=\"10.5\" cy=\"7.5\" rx=\"0.5\" ry=\"0.7\" fill=\"currentColor\" stroke=\"none\"></ellipse><ellipse cx=\"13.5\" cy=\"7.5\" rx=\"0.5\" ry=\"0.7\" fill=\"currentColor\" stroke=\"none\"></ellipse><path d=\"M10.5 9.5l1.5 1 1.5-1\"></path><path d=\"M7 16l-2 3c-.5 1 .5 2 1.5 1.5l3-1.5\"></path><path d=\"M17 16l2 3c.5 1-.5 2-1.5 1.5l-3-1.5\"></path></svg>"
     },
     {
       "id": "windows",
       "name": "Windows",
-      "description": "Empacotamento de executáveis nativos, testes cross-platform e automação de rotinas corporativas.",
+      "description": "Empacotamento de executáveis nativos, testes cross-platform e automação de rotinas.",
       "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"3 5 11 3.8 11 11.2 3 11.2 3 5\"></polygon><polygon points=\"13 3.5 21 2.5 21 11.2 13 11.2 13 3.5\"></polygon><polygon points=\"3 12.8 11 12.8 11 20.2 3 19 3 12.8\"></polygon><polygon points=\"13 12.8 21 12.8 21 21.5 13 20.5 13 12.8\"></polygon></svg>"
     },
     {
@@ -102,20 +119,20 @@
     {
       "id": "docker",
       "name": "Docker",
-      "description": "Isolamento de serviços, orquestração de containers em servidores locais (NAS) e ambientes reproduzíveis.",
-      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"7\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"11\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"7\" y=\"6\" width=\"3\" height=\"3\"></rect><rect x=\"11\" y=\"6\" width=\"3\" height=\"3\"></rect><path d=\"M2 14h18c1 0 2-.5 2-2 0-1-1-1.5-1.5-1.5M3 14c0 4 3.5 6 8.5 6s8.5-2 9.5-6\"></path></svg>"
+      "description": "Isolamento de serviços, orquestração de containers em servidores e ambientes reproduzíveis.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"9\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"13\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"9\" y=\"6\" width=\"3\" height=\"3\"></rect><rect x=\"13\" y=\"6\" width=\"3\" height=\"3\"></rect><path d=\"M2 14h18c1 0 2-.5 2-2 0-1-1-1.5-1.5-1.5M3 14c0 4 3.5 6 8.5 6s8.5-2 9.5-6\"></path></svg>"
     },
     {
       "id": "ollama",
       "name": "Ollama",
       "description": "Infraestrutura local para inferência de modelos de linguagem (LLMs) privados e aceleração por GPU.",
-      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 3v3M15 3v3\"></path><rect x=\"6\" y=\"6\" width=\"12\" height=\"14\" rx=\"6\"></rect><circle cx=\"10\" cy=\"11\" r=\"1\" fill=\"currentColor\"></circle><circle cx=\"14\" cy=\"11\" r=\"1\" fill=\"currentColor\"></circle><path d=\"M10 15h4\"></path></svg>"
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"10\" rx=\"2\"></rect><circle cx=\"12\" cy=\"5\" r=\"2\"></circle><path d=\"M12 7v4\"></path><line x1=\"8\" y1=\"16\" x2=\"8\" y2=\"16\"></line><line x1=\"16\" y1=\"16\" x2=\"16\" y2=\"16\"></line></svg>"
     },
     {
       "id": "qwen",
       "name": "Qwen2.5-Coder",
       "description": "Modelo especializado em geração, refatoração e análise estática de código integrado ao fluxo de desenvolvimento local.",
-      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z\"></path></svg>"
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"10\" rx=\"2\"></rect><circle cx=\"12\" cy=\"5\" r=\"2\"></circle><path d=\"M12 7v4\"></path><line x1=\"8\" y1=\"16\" x2=\"8\" y2=\"16\"></line><line x1=\"16\" y1=\"16\" x2=\"16\" y2=\"16\"></line></svg>"
     }
   ]
 }

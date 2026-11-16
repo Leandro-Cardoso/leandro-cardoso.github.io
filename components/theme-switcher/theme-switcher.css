@@ -35,6 +35,12 @@
   border: var(--border-thin) solid var(--glass-border);
 }
 
+.theme-icon-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .theme-icon {
   width: 14px;
   height: 14px;

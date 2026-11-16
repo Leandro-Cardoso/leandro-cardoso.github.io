@@ -1,14 +1,25 @@
-import { mountTemplate } from '../../js/loader.js';
+import { mountTemplate, loadJSON } from '../../js/loader.js';
 import { getSavedTheme, applyTheme } from '../../js/theme.js';
 
 export async function render(target) {
   if (!target) return;
 
-  await mountTemplate(
-    target,
-    './components/theme-switcher/theme-switcher.html',
-    './components/theme-switcher/theme-switcher.css'
-  );
+  const [, iconsData] = await Promise.all([
+    mountTemplate(
+      target,
+      './components/theme-switcher/theme-switcher.html',
+      './components/theme-switcher/theme-switcher.css'
+    ),
+    loadJSON('./data/icons.json')
+  ]);
+
+  const themeIcons = iconsData?.theme || {};
+  target.querySelectorAll('[data-icon-slot]').forEach((slot) => {
+    const key = slot.getAttribute('data-icon-slot');
+    if (themeIcons[key]) {
+      slot.innerHTML = themeIcons[key];
+    }
+  });
 
   const buttons = target.querySelectorAll('.theme-btn');
 
