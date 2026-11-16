@@ -11,9 +11,9 @@
       "view": "projects",
       "pageTitle": "Projetos | Leandro Cardoso DEV"
     },
-    "/contact": {
-      "view": "contact",
-      "pageTitle": "Contato | Leandro Cardoso DEV"
+    "/contacts": {
+      "view": "contacts",
+      "pageTitle": "Contatos | Leandro Cardoso DEV"
     }
   }
 }

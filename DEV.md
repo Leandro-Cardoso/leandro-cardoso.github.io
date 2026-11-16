@@ -2,7 +2,6 @@
 
 ## ToDo
 
-* Criar contatos
 * Ajustar home
 * Criar sobre
 * Criar blog de tecnologia e programacão

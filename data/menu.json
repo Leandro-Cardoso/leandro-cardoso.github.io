@@ -10,8 +10,8 @@
     "href": "#/projects"
   },
   {
-    "label": "Contato",
-    "route": "/contact",
-    "href": "#/contact"
+    "label": "Contatos",
+    "route": "/contacts",
+    "href": "#/contacts"
   }
 ]

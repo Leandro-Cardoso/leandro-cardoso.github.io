@@ -1,3 +1,0 @@
-Engenheiro de Software focado em arquitetura modular, sistemas de alta performance e desenvolvimento full-stack.
-
-Construo desde aplicações web escaláveis e backends robustos até motores gráficos de baixo nível sem dependências externas.

@@ -1,0 +1,27 @@
+{
+  "title": "Contatos",
+  "subtitle": "Canais diretos para parcerias profissionais, desenvolvimento de sistemas e consultorias técnicas.",
+  "email": "leandrocardosodev@gmail.com",
+  "phone": "+55 (22) 99293-1067",
+  "location": "Saquarema-RJ Brasil",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Leandro-Cardoso",
+      "icon": "github",
+      "description": "Repositórios e código aberto"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/leandro-cardoso-992529266",
+      "icon": "linkedin",
+      "description": "Perfil profissional"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://wa.me/5522992931067",
+      "icon": "message-circle",
+      "description": "Contato direto e rápido"
+    }
+  ]
+}
