@@ -1,0 +1,18 @@
+{
+  "404": {
+    "code": "404",
+    "badge": "ROTA NÃO ENCONTRADA",
+    "title": "Página inexistente",
+    "description": "O endereço acessado não está mapeado nas rotas deste portfólio ou foi movido.",
+    "actionLabel": "Voltar para o Início",
+    "actionRoute": "#/"
+  },
+  "500": {
+    "code": "503",
+    "badge": "MÓDULO INDISPONÍVEL",
+    "title": "Página em construção",
+    "description": "Esta rota já está registrada no menu, mas o módulo da view ainda está sendo implementado.",
+    "actionLabel": "Voltar para o Início",
+    "actionRoute": "#/"
+  }
+}

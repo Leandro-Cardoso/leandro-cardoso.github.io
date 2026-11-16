@@ -1,0 +1,42 @@
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-5);
+    background-color: var(--bg-secondary);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: var(--border-thin) solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+  }
+
+  /* Oculta o cabeçalho mobile quando o menu lateral é aberto */
+  .mobile-header.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+  }
+
+  .mobile-toggle-btn {
+    font-size: var(--text-lg);
+    color: var(--accent-yellow);
+    padding: var(--space-1) var(--space-2);
+    border: var(--border-thin) solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    line-height: 1;
+    transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .mobile-toggle-btn:hover {
+    background-color: var(--bg-surface-hover);
+    border-color: var(--glass-border-hover);
+  }
+}

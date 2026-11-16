@@ -1,0 +1,31 @@
+{
+  "badge": "DISPONÍVEL PARA PROJETOS & CONSULTORIA",
+  "greeting": "Olá, eu sou",
+  "name": "Leandro Cardoso",
+  "role": "Engenheiro de Software",
+  "ctaPrimary": {
+    "label": "Explorar Projetos",
+    "route": "#/projetos"
+  },
+  "ctaSecondary": {
+    "label": "Entrar em Contato",
+    "route": "#/contato"
+  },
+  "highlights": [
+    {
+      "label": "ARQUITETURA",
+      "value": "Modular & Clean",
+      "accent": "yellow"
+    },
+    {
+      "label": "STACK PRINCIPAL",
+      "value": "Rust · Python · JS",
+      "accent": "orange"
+    },
+    {
+      "label": "INFRAESTRUTURA",
+      "value": "Linux · Docker · SQL",
+      "accent": "yellow"
+    }
+  ]
+}

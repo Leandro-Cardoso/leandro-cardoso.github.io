@@ -1,0 +1,21 @@
+/* components/logo/logo.css */
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.brand-logo:hover {
+  opacity: 0.85;
+}
+
+.brand-tag {
+  color: var(--accent-yellow);
+  font-family: var(--font-mono);
+}

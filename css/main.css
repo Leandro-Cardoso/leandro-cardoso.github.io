@@ -1,0 +1,44 @@
+#app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(240, 185, 11, 0.045) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(249, 115, 22, 0.035) 0%, transparent 45%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--radius-xs);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-yellow);
+}
+
+/* Transição fluida ao alternar temas */
+#app,
+.layout-sidebar,
+.home-hero,
+.highlight-card,
+.error-card,
+.theme-switcher,
+.theme-btn,
+.nav-menu-link {
+  transition:
+    background-color 300ms ease,
+    border-color 300ms ease,
+    color 250ms ease,
+    box-shadow 300ms ease;
+}

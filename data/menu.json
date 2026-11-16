@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Início",
+    "route": "/",
+    "href": "#/"
+  },
+  {
+    "label": "Projetos",
+    "route": "/projetos",
+    "href": "#/projetos"
+  },
+  {
+    "label": "Contato",
+    "route": "/contato",
+    "href": "#/contato"
+  }
+]
