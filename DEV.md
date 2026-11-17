@@ -2,7 +2,6 @@
 
 ## ToDo
 
-* Idiomas
 * Ajustar cards depois de finalizados
 
 * Adicionar projetos com imagens

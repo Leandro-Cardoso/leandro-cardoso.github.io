@@ -1,0 +1,18 @@
+{
+  "sectionTitle": "Idiomas",
+  "sectionSubtitle": "Proficiência linguística para leitura técnica, documentação e comunicação internacional.",
+  "items": [
+    {
+      "name": "Português",
+      "level": "Nativo",
+      "proficiency": 100,
+      "svg": "<svg viewBox=\"0 0 24 16\" width=\"28\" height=\"20\"><rect width=\"24\" height=\"16\" rx=\"2\" fill=\"#009c3b\"/><polygon points=\"12,2 22,8 12,14 2,8\" fill=\"#ffdf00\"/><circle cx=\"12\" cy=\"8\" r=\"3.5\" fill=\"#002776\"/></svg>"
+    },
+    {
+      "name": "Inglês",
+      "level": "Intermediário",
+      "proficiency": 75,
+      "svg": "<svg viewBox=\"0 0 24 16\" width=\"28\" height=\"20\"><rect width=\"24\" height=\"16\" rx=\"2\" fill=\"#012169\"/><path d=\"M0,0 L24,16 M24,0 L0,16\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><path d=\"M0,0 L24,16 M24,0 L0,16\" stroke=\"#c8102e\" stroke-width=\"1.2\"/><path d=\"M12,0 V16 M0,8 H24\" stroke=\"#ffffff\" stroke-width=\"4\"/><path d=\"M12,0 V16 M0,8 H24\" stroke=\"#c8102e\" stroke-width=\"2.4\"/></svg>"
+    }
+  ]
+}

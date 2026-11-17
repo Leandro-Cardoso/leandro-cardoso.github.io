@@ -1,4 +1,6 @@
 import { mountTemplate, loadJSON } from '../../js/loader.js';
+import { render as renderEducation } from '../../components/education/education.js';
+import { render as renderLanguages } from '../../components/languages/languages.js';
 import { render as renderExpertise } from '../../components/expertise/expertise.js';
 import { render as renderTechnologies } from '../../components/technologies/technologies.js';
 import { render as renderCertifications } from '../../components/certifications/certifications.js';
@@ -23,7 +25,7 @@ export async function render(target) {
   target.querySelector('#about-subtitle').textContent = aboutData.subtitle;
 
   target.querySelector('#bio-heading').textContent = aboutData.bio.heading;
-  
+
   const bioContainer = target.querySelector('#bio-paragraphs');
   bioContainer.innerHTML = '';
   aboutData.bio.paragraphs.forEach(text => {
@@ -33,6 +35,8 @@ export async function render(target) {
   });
 
   await Promise.all([
+    renderEducation(target.querySelector('#about-education-slot')),
+    renderLanguages(target.querySelector('#about-languages-slot')),
     renderExpertise(target.querySelector('#about-expertise-slot')),
     renderTechnologies(target.querySelector('#about-technologies-slot')),
     renderCertifications(target.querySelector('#about-certifications-slot')),
