@@ -1,0 +1,89 @@
+.soft-skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.soft-skills-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.soft-skills-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.soft-skills-desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-2);
+}
+
+.soft-skill-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-orange);
+}
+
+/* Linha que alinha o ícone e a categoria lado a lado */
+.soft-skill-header-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.soft-skill-icon {
+  display: flex;
+  align-items: center;
+  color: var(--accent-orange);
+}
+
+.soft-skill-icon svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  stroke: var(--accent-orange);
+}
+
+.soft-skill-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.soft-skill-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.soft-skill-desc {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
