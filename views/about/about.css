@@ -1,0 +1,102 @@
+.about-view {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-10) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.about-header {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight), var(--shadow-sm);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+}
+
+.about-header-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+/* Foto Redonda e Maior */
+.about-avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-yellow);
+  box-shadow: 0 0 20px rgba(240, 185, 11, 0.2);
+  flex-shrink: 0;
+}
+
+.about-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.about-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about-role {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--accent-yellow);
+  font-weight: 600;
+}
+
+.about-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+/* Card de Biografia */
+.about-content-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.about-section-heading {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.about-bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}

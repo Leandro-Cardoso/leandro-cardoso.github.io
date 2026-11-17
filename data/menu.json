@@ -5,6 +5,11 @@
     "href": "#/"
   },
   {
+    "label": "Sobre",
+    "route": "/about",
+    "href": "#/about"
+  },
+  {
     "label": "Projetos",
     "route": "/projects",
     "href": "#/projects"

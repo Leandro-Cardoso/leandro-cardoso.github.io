@@ -7,6 +7,10 @@
       "view": "home",
       "pageTitle": "Início | Leandro Cardoso DEV"
     },
+    "/about": {
+      "view": "about",
+      "pageTitle": "Sobre | Leandro Cardoso DEV"
+    },
     "/projects": {
       "view": "projects",
       "pageTitle": "Projetos | Leandro Cardoso DEV"
