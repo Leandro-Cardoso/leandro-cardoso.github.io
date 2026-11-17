@@ -1,0 +1,104 @@
+.expertise-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.expertise-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.expertise-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.expertise-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.expertise-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.expertise-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-yellow);
+}
+
+.expertise-icon {
+  display: flex;
+  align-items: center;
+  color: var(--accent-yellow);
+}
+
+.expertise-icon svg {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  stroke: var(--accent-yellow);
+  margin: auto;
+}
+
+.expertise-card-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.expertise-card-desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  flex: 1;
+}
+
+/* Pílulas de tecnologias nos cards de expertise */
+.expertise-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: var(--border-thin) solid var(--border-subtle);
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  background-color: var(--bg-input);
+  color: var(--accent-yellow);
+  padding: 3px var(--space-2);
+  border-radius: var(--radius-xs);
+  border: var(--border-thin) solid rgba(var(--accent-yellow-rgb), 0.2);
+}
+
+.tech-pill svg {
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  stroke: var(--accent-yellow);
+}

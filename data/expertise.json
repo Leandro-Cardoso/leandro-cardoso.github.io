@@ -1,0 +1,30 @@
+{
+  "sectionTitle": "Áreas de Atuação",
+  "sectionSubtitle": "Pilares de engenharia, arquitetura de sistemas e ecossistemas tecnológicos dominados.",
+  "items": [
+    {
+      "icon": "server",
+      "title": "Full-Stack",
+      "description": "Desenvolvimento robusto em Rust (Actix/Axum), Python (Django/Scikit-learn) e JavaScript (Vue).",
+      "technologies": ["rust", "python", "django", "javascript", "vue"]
+    },
+    {
+      "icon": "gear",
+      "title": "Back-End",
+      "description": "Desenvolvimento de APIs REST com Rust (Actix/Axum), arquitetura limpa, microsserviços, concorrência e engines avançadas.",
+      "technologies": ["rust", "sql", "postgresql", "sqlite", "nosql"]
+    },
+    {
+      "icon": "database",
+      "title": "IA & Ciência de Dados",
+      "description": "Modelagem relacional avançada, análise estatística, aplicação prática de algoritmos de Machine Learning e execução local de modelos de linguagem (LLMs).",
+      "technologies": ["python", "django", "sql", "postgresql", "ollama", "qwen"]
+    },
+    {
+      "icon": "terminal",
+      "title": "Infraestrutura",
+      "description": "Automação de ambientes, shell scripting, conteinerização de serviços, versionamento e gerenciamento avançado em Linux.",
+      "technologies": ["linux", "windows", "bash", "git", "docker"]
+    }
+  ]
+}
