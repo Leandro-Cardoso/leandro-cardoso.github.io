@@ -2,12 +2,15 @@
 
 ## ToDo
 
-* Formacões academicas
 * Idiomas
 * Ajustar cards depois de finalizados
-* Criar blog de tecnologia e programacão
 
-* Adicionar projetos
+* Adicionar projetos com imagens
+* Criar componente com apenas projetos destacados (para home)
+* Deixar contatos mais bonita (preencher mais tela)
+* Deixar home mais bonita
+
+* Criar blog de tecnologia e programacão
 
 ## Teste
 

@@ -1,0 +1,24 @@
+{
+  "sectionTitle": "Formações Acadêmicas",
+  "sectionSubtitle": "Base teórica, rigor científico e formação superior.",
+  "items": [
+    {
+      "institution": "Univassouras",
+      "course": "Engenharia de Software",
+      "degree": "Bacharelado",
+      "period": "2023 - 2027",
+      "status": "Cursando",
+      "inProgress": true,
+      "logo": "./assets/images/logo-univassouras.png"
+    },
+    {
+      "institution": "UERJ",
+      "course": "Física",
+      "degree": "Bacharelado",
+      "period": "2017 - 2020",
+      "status": "Incompleto",
+      "inProgress": false,
+      "logo": "./assets/images/logo-uerj.svg"
+    }
+  ]
+}

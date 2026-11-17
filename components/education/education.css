@@ -1,0 +1,144 @@
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.education-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.education-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.education-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.education-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.education-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-yellow);
+}
+
+/* Destaque sutil no topo para formação em andamento */
+.education-card.is-active {
+  border-color: rgba(240, 185, 11, 0.35);
+}
+
+.education-card.is-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.education-logo-box {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-yellow);
+}
+
+.education-logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.education-logo-box svg {
+  width: 36px;
+  height: 36px;
+  stroke: var(--accent-yellow);
+}
+
+.education-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.education-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.education-institution {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--accent-yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.education-status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-xs);
+  background-color: var(--bg-input);
+  color: var(--text-secondary);
+  border: var(--border-thin) solid var(--border-subtle);
+}
+
+.education-card.is-active .education-status-badge {
+  color: var(--accent-yellow);
+  border-color: rgba(240, 185, 11, 0.3);
+}
+
+.education-course {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.education-degree {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.education-period {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-orange);
+  font-weight: 600;
+  margin-top: var(--space-1);
+}
