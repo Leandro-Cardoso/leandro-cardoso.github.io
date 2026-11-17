@@ -1,0 +1,155 @@
+.experiences-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.experiences-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.experiences-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.experiences-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-6);
+}
+
+.experience-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-thin) solid var(--glass-border);
+  box-shadow: var(--glass-highlight);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-yellow);
+}
+
+/* Destaque sutil no topo para a experiência atual */
+.experience-card.is-current {
+  border-color: rgba(240, 185, 11, 0.35);
+}
+
+.experience-card.is-current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.experience-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.experience-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.experience-period {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-orange);
+  font-weight: 600;
+}
+
+.experience-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-xs);
+  background-color: var(--bg-input);
+  color: var(--text-secondary);
+  border: var(--border-thin) solid var(--border-subtle);
+}
+
+.experience-card.is-current .experience-badge {
+  color: var(--accent-yellow);
+  border-color: rgba(240, 185, 11, 0.3);
+}
+
+.experience-company {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--accent-yellow);
+  line-height: 1.25;
+}
+
+.experience-role {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.experience-desc {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  flex: 1;
+}
+
+/* Pílulas de tecnologias e ferramentas utilizadas */
+.experience-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+  padding-top: var(--space-3);
+  border-top: var(--border-thin) solid var(--border-subtle);
+}
+
+.exp-tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  background-color: var(--bg-input);
+  color: var(--accent-yellow);
+  padding: 3px var(--space-2);
+  border-radius: var(--radius-xs);
+  border: var(--border-thin) solid rgba(240, 185, 11, 0.2);
+}
+
+.exp-tech-pill svg {
+  width: 13px;
+  height: 13px;
+  min-width: 13px;
+  stroke: var(--accent-yellow);
+}
+
+.exp-tech-pill.is-custom {
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}

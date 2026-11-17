@@ -1,0 +1,76 @@
+{
+  "sectionTitle": "Experiência Profissional",
+  "sectionSubtitle": "Histórico de atuação em engenharia de software, pesquisa científica, infraestrutura de TI e gestão operacional.",
+  "items": [
+    {
+      "company": "Grupo Oceânica",
+      "role": "Engenheiro de Software Estagiário",
+      "period": "2025 - Atual",
+      "type": "Engenharia de Software & Análise de Dados",
+      "current": true,
+      "description": "Desenvolvimento, gerenciamento e manutenção de aplicações corporativas para gestão empresarial com Python, Django, PostgreSQL e SQLite, além da integração entre APIs de sistemas. Análise de dados com Python e Power BI, scripts de automação e automação de relatórios, planilhas Excel e dashboards utilizando Python, Pandas e OpenPyXL.",
+      "technologies": ["python", "django", "postgresql", "sqlite", "git", "bash"],
+      "customTags": ["Power BI", "Pandas", "OpenPyXL", "APIs REST"]
+    },
+    {
+      "company": "Prefeitura de Saquarema",
+      "role": "Agente de Tecnologia",
+      "period": "2024 - 2025",
+      "type": "Infraestrutura & Suporte",
+      "current": false,
+      "description": "Suporte técnico especializado, manutenção de redes, pacote Office, auxílio e manutenção de equipamentos eletrônicos voltados para o ensino, suporte tecnológico ao corpo docente e condução de aulas de informática.",
+      "technologies": ["windows", "linux"],
+      "customTags": ["Redes", "Hardware", "Suporte TI", "Pacote Office"]
+    },
+    {
+      "company": "Freelancer",
+      "role": "Desenvolvedor & Consultor Digital",
+      "period": "2016 - 2023",
+      "type": "Autônomo",
+      "current": false,
+      "description": "Desenvolvimento de software sob demanda, otimização de websites para mecanismos de busca (SEO), marketing digital, gestão de redes sociais e estratégias de vendas online comissionadas.",
+      "technologies": ["html", "css", "javascript", "python"],
+      "customTags": ["SEO", "Marketing Digital", "Web"]
+    },
+    {
+      "company": "UERJ",
+      "role": "Iniciação Científica",
+      "period": "2017 - 2017",
+      "type": "Pesquisa & HPC",
+      "current": false,
+      "description": "Projeto de pesquisa de simulação de raios X em um cluster de computadores de alto desempenho, utilizando o Kernel do Linux e a linguagem de programação C#.",
+      "technologies": ["linux"],
+      "customTags": ["C#", "Cluster Computing", "Simulação Científica"]
+    },
+    {
+      "company": "Bom Doce",
+      "role": "Gerente de Estoque",
+      "period": "2014 - 2015",
+      "type": "Logística & Gestão",
+      "current": false,
+      "description": "Controle e gerenciamento estratégico de estoque, acompanhamento de pedidos, controle de carga e descarga de caminhões, emissão de relatórios de estoque e produção, além da solicitação de materiais e matéria-prima.",
+      "technologies": [],
+      "customTags": ["Gestão de Estoque", "Logística", "Controle de Produção"]
+    },
+    {
+      "company": "AlanMotors",
+      "role": "Auxiliar Administrativo",
+      "period": "2011 - 2014",
+      "type": "Administração & Financeiro",
+      "current": false,
+      "description": "Emissão de notas fiscais (venda, devolução, garantia e serviços), controle financeiro, pagamentos, cobranças, negociação com fornecedores, apuração de lucros, relatórios de vendas, rotinas de departamento pessoal (contratação, férias, rescisão) e controle de almoxarifado.",
+      "technologies": [],
+      "customTags": ["Notas Fiscais", "Gestão Financeira", "Departamento Pessoal"]
+    },
+    {
+      "company": "SERTEC Contabilidade",
+      "role": "Auxiliar de Escritório",
+      "period": "2011 - 2011",
+      "type": "Contabilidade & Fiscal",
+      "current": false,
+      "description": "Elaboração de balanço patrimonial e DRE no sistema AlterData, cobrança de documentos e honorários, redação de contratos (compra, venda, aluguel e serviços contábeis), acompanhamento de abertura e encerramento de firmas, lançamentos contábeis, livros caixa e diário.",
+      "technologies": [],
+      "customTags": ["AlterData", "Balanço & DRE", "Contabilidade", "Contratos"]
+    }
+  ]
+}

@@ -2,7 +2,9 @@
 
 ## ToDo
 
-* Criar sobre
+* Formacões academicas
+* Idiomas
+* Certificados
 * Criar blog de tecnologia e programacão
 
 * Adicionar projetos
