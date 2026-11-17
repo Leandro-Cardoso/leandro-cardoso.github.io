@@ -9,6 +9,7 @@
 * Deixar contatos mais bonita (preencher mais tela)
 * Deixar home mais bonita
 
+* Botão de impressão/PDF (criar um modelo de currículo com os dados da sobre)
 * Criar blog de tecnologia e programacão
 
 ## Teste
