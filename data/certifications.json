@@ -1,0 +1,96 @@
+{
+  "sectionTitle": "Certificações",
+  "sectionSubtitle": "Qualificações técnicas, especializações e cursos intensivos concluídos ao longo da trajetória.",
+  "items": [
+    {
+      "issuer": "SENAI",
+      "title": "Básico de Cybersegurança",
+      "year": "2024",
+      "hours": "64h",
+      "category": "Cybersegurança",
+      "technologies": ["linux", "windows"],
+      "customTags": ["Cybersegurança", "Cloud", "Redes", "Criptografia"],
+      "file": "./assets/certificates/2024-05-10-Hackers-do-Bem-Basico.pdf"
+    },
+    {
+      "issuer": "SENAI",
+      "title": "Nivelamento de Cybersegurança",
+      "year": "2024",
+      "hours": "80h",
+      "category": "Cybersegurança",
+      "technologies": ["linux", "windows"],
+      "customTags": ["Hardware", "Internet", "Cloud", "Redes", "Lógica de Programação", "Scripts"],
+      "file": "./assets/certificates/2024-03-09-Hackers-do-Bem-Nivelamento.pdf"
+    },
+    {
+      "issuer": "Rocketseat",
+      "title": "Fundamentos da Programação Web",
+      "year": "2023",
+      "hours": "12h",
+      "category": "Desenvolvimento Web",
+      "technologies": ["html", "css", "javascript", "git"],
+      "customTags": ["GitHub", "DOM", "HTTP", "Lógica de Programação"],
+      "file": "./assets/certificates/2023-10-02-Rocketseat-Discover.pdf"
+    },
+    {
+      "issuer": "Udacity",
+      "title": "Fundamentos de Data Science I",
+      "year": "2019",
+      "hours": null,
+      "category": "Ciência de Dados",
+      "technologies": ["python"],
+      "customTags": ["Banco de Dados", "Estatística", "Estruturas de Dados"],
+      "file": null
+    },
+    {
+      "issuer": "USP",
+      "title": "Introdução à Ciência da Computação em Python",
+      "year": "2019",
+      "hours": null,
+      "category": "Ciência de Dados",
+      "technologies": ["python"],
+      "customTags": ["Banco de Dados", "Estatística", "Algoritmos", "Estruturas de Dados"],
+      "file": null
+    },
+    {
+      "issuer": "Microlins",
+      "title": "Web Designer",
+      "year": "2006",
+      "hours": "96h",
+      "category": "Desenvolvimento Web",
+      "technologies": ["html", "css", "javascript"],
+      "customTags": ["Corel Draw", "Dreamweaver", "Flash", "Photoshop"],
+      "file": "./assets/certificates/2006-12-19-Microlins-Web-Designer-96.pdf"
+    },
+    {
+      "issuer": "IEBEU",
+      "title": "Windows, Word, Excel, Access e PowerPoint",
+      "year": "2006",
+      "hours": "88h",
+      "category": "Produtividade",
+      "technologies": ["windows", "linux"],
+      "customTags": ["Office", "Word", "Excel", "Access", "PowerPoint"],
+      "file": "./assets/certificates/2006-03-06-IEBEU-Windows-Word-Excel-Access-Powepoint-88.pdf"
+    },
+    {
+      "issuer": "Microlins",
+      "title": "Redes de Computadores",
+      "year": "2005",
+      "hours": null,
+      "category": "Infraestrutura",
+      "technologies": ["windows", "linux"],
+      "customTags": ["TCP/IP", "Cabeamento", "Topologias", "Internet"],
+      "file": null
+    },
+    {
+      "issuer": "Microlins",
+      "title": "Montagem e Manutenção de Computadores",
+      "year": "2005",
+      "hours": "72h",
+      "category": "Hardware",
+      "technologies": ["windows", "linux"],
+      "customTags": ["Hardware", "Diagnóstico", "Sistemas"],
+      "file": "./assets/certificates/2005-03-26-Microlins-Montagem-e-Manutencao-de-Computadores-72.pdf"
+    }
+  ]
+}
