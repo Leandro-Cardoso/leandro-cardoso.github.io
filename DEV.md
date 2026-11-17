@@ -4,7 +4,7 @@
 
 * Formacões academicas
 * Idiomas
-* Certificados
+* Ajustar cards depois de finalizados
 * Criar blog de tecnologia e programacão
 
 * Adicionar projetos
