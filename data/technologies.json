@@ -1,0 +1,120 @@
+{
+  "sectionTitle": "Stack Tecnológica & Domínio",
+  "sectionSubtitle": "Tecnologias e ferramentas utilizadas no desenvolvimento de sistemas de alta performance.",
+  "items": [
+    {
+      "icon": "rust",
+      "title": "Rust",
+      "description": "APIs REST (Actix/Axum), backend, concorrência segura, aplicativos nativos, microsserviços e engines gráficas de baixo nível.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M9 16V8h4.5a2.5 2.5 0 0 1 0 5H9\"></path><path d=\"M13.5 13L16 16\"></path></svg>"
+    },
+    {
+      "icon": "python",
+      "title": "Python",
+      "description": "Desenvolvimento backend, automação de rotinas, ciência de dados, análise de dados e algoritmos de Machine Learning com Scikit-learn.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline></svg>"
+    },
+    {
+      "icon": "django",
+      "title": "Django",
+      "description": "Sistemas modulares, ORMs complexos, painéis administrativos e APIs seguras.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 3v14a4 4 0 0 1-4 4H5\"></path><path d=\"M11 10H7a3 3 0 0 0-3 3v1a3 3 0 0 0 3 3h4\"></path><path d=\"M16 8v10a3 3 0 0 1-3 3\"></path><circle cx=\"16\" cy=\"4\" r=\"1\" fill=\"currentColor\"></circle></svg>"
+    },
+    {
+      "icon": "javascript",
+      "title": "JavaScript",
+      "description": "Engenharia frontend nativa com ES Modules, roteamento SPA desacoplado e manipulação assíncrona de alta performance.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"></rect><path d=\"M10 10v5a2 2 0 0 1-2 2H7\"></path><path d=\"M17 11.5a1.5 1.5 0 0 0-3 0c0 2 3 1.5 3 3.5a1.5 1.5 0 0 1-3 0\"></path></svg>"
+    },
+    {
+      "icon": "vue",
+      "title": "Vue.js",
+      "description": "Construção de interfaces web reativas, componentizadas e dashboards leves.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"2 4 12 21 22 4 18 4 12 14.5 6 4 2 4\"></polygon><polyline points=\"7.5 4 12 11.5 16.5 4\"></polyline></svg>"
+    },
+    {
+      "icon": "react",
+      "title": "React",
+      "description": "Desenvolvimento de aplicações SPA escaláveis e integração fluida com APIs RESTful.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"2\" fill=\"currentColor\"></circle><ellipse cx=\"12\" cy=\"12\" rx=\"10\" ry=\"4\"></ellipse><ellipse cx=\"12\" cy=\"12\" rx=\"10\" ry=\"4\" transform=\"rotate(60 12 12)\"></ellipse><ellipse cx=\"12\" cy=\"12\" rx=\"10\" ry=\"4\" transform=\"rotate(120 12 12)\"></ellipse></svg>"
+    },
+    {
+      "icon": "html",
+      "title": "HTML5",
+      "description": "Estruturação semântica limpa, acessível e otimizada para carregamento instantâneo.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"4 3 20 3 18.5 19 12 21 5.5 19 4 3\"></polygon><polyline points=\"16 7 8 7 8.5 12 15.5 12 15 16.5 12 17.5 9 16.5 8.8 14.5\"></polyline></svg>"
+    },
+    {
+      "icon": "css",
+      "title": "CSS3",
+      "description": "Design systems baseados em tokens nativos, layouts responsivos Grid/Flexbox e estética Glassmorphism.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"4 3 20 3 18.5 19 12 21 5.5 19 4 3\"></polygon><polyline points=\"8 7 16 7 15.5 12 9 12\"></polyline><polyline points=\"15.5 12 15 16.5 12 17.5 9 16.5 8.8 14.5\"></polyline></svg>"
+    },
+    {
+      "icon": "sql",
+      "title": "SQL",
+      "description": "Modelagem relacional normalizada, otimização de consultas e integridade transacional com bancos relacionais.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path></svg>"
+    },
+    {
+      "icon": "postgresql",
+      "title": "PostgreSQL",
+      "description": "Banco de dados relacional avançado para sistemas críticos, indexação complexa, transações ACID e escalabilidade em produção.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path></svg>"
+    },
+    {
+      "icon": "sqlite",
+      "title": "SQLite",
+      "description": "Motor de banco de dados SQL embutido, leve e zero-configuração, ideal para aplicações locais, protótipos e sistemas embarcados.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"3\" width=\"16\" height=\"18\" rx=\"2\"></rect><line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"></line><line x1=\"4\" y1=\"15\" x2=\"20\" y2=\"15\"></line><line x1=\"9\" y1=\"3\" x2=\"9\" y2=\"21\"></line></svg>"
+    },
+    {
+      "icon": "nosql",
+      "title": "NoSQL",
+      "description": "Armazenamento orientado a documentos e estruturas chave-valor de baixa latência para cache e dados não estruturados.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><path d=\"M9 13h6M9 17h4\"></path></svg>"
+    },
+    {
+      "icon": "linux",
+      "title": "Linux",
+      "description": "Administração de ambientes Linux, servidores domésticos, systemd e configuração avançada de sistema.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2c-2.2 0-4 1.6-4 3.5 0 1 .4 1.9 1.1 2.6C7.5 9.3 6.5 11 6.5 13c0 3.3 2.5 6 5.5 6s5.5-2.7 5.5-6c0-2-1-3.7-2.6-4.9.7-.7 1.1-1.6 1.1-2.6 0-1.9-1.8-3.5-4-3.5z\"></path><ellipse cx=\"10.5\" cy=\"7.5\" rx=\"0.5\" ry=\"0.7\" fill=\"currentColor\" stroke=\"none\"></ellipse><ellipse cx=\"13.5\" cy=\"7.5\" rx=\"0.5\" ry=\"0.7\" fill=\"currentColor\" stroke=\"none\"></ellipse><path d=\"M10.5 9.5l1.5 1 1.5-1\"></path><path d=\"M7 16l-2 3c-.5 1 .5 2 1.5 1.5l3-1.5\"></path><path d=\"M17 16l2 3c.5 1-.5 2-1.5 1.5l-3-1.5\"></path></svg>"
+    },
+    {
+      "icon": "windows",
+      "title": "Windows",
+      "description": "Empacotamento de executáveis nativos, testes cross-platform e automação de rotinas.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"3 5 11 3.8 11 11.2 3 11.2 3 5\"></polygon><polygon points=\"13 3.5 21 2.5 21 11.2 13 11.2 13 3.5\"></polygon><polygon points=\"3 12.8 11 12.8 11 20.2 3 19 3 12.8\"></polygon><polygon points=\"13 12.8 21 12.8 21 21.5 13 20.5 13 12.8\"></polygon></svg>"
+    },
+    {
+      "icon": "bash",
+      "title": "Bash",
+      "description": "Scripts de automação de ambiente, controle de hardware via CLI, pipelines de backup e rotinas de deploy.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"></rect><polyline points=\"6 9 10 12 6 15\"></polyline><line x1=\"12\" y1=\"15\" x2=\"18\" y2=\"15\"></line></svg>"
+    },
+    {
+      "icon": "git",
+      "title": "Git",
+      "description": "Controle de versão distribuído, fluxos de branches organizados e publicação contínua via GitHub.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"18\" cy=\"18\" r=\"3\"></circle><circle cx=\"6\" cy=\"6\" r=\"3\"></circle><path d=\"M13 6h3a2 2 0 0 1 2 2v7\"></path><line x1=\"6\" y1=\"9\" x2=\"6\" y2=\"21\"></line></svg>"
+    },
+    {
+      "icon": "docker",
+      "title": "Docker",
+      "description": "Isolamento de serviços, orquestração de containers em servidores e ambientes reproduzíveis.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"9\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"13\" y=\"10\" width=\"3\" height=\"3\"></rect><rect x=\"9\" y=\"6\" width=\"3\" height=\"3\"></rect><rect x=\"13\" y=\"6\" width=\"3\" height=\"3\"></rect><path d=\"M2 14h18c1 0 2-.5 2-2 0-1-1-1.5-1.5-1.5M3 14c0 4 3.5 6 8.5 6s8.5-2 9.5-6\"></path></svg>"
+    },
+    {
+      "icon": "ollama",
+      "title": "Ollama",
+      "description": "Infraestrutura local para inferência de modelos de linguagem (LLMs) privados e aceleração por GPU.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"10\" rx=\"2\"></rect><circle cx=\"12\" cy=\"5\" r=\"2\"></circle><path d=\"M12 7v4\"></path><line x1=\"8\" y1=\"16\" x2=\"8\" y2=\"16\"></line><line x1=\"16\" y1=\"16\" x2=\"16\" y2=\"16\"></line></svg>"
+    },
+    {
+      "icon": "qwen",
+      "title": "Qwen2.5-Coder",
+      "description": "Modelo especializado em geração, refatoração e análise estática de código integrado ao fluxo de desenvolvimento local.",
+      "svg": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"10\" rx=\"2\"></rect><circle cx=\"12\" cy=\"5\" r=\"2\"></circle><path d=\"M12 7v4\"></path><line x1=\"8\" y1=\"16\" x2=\"8\" y2=\"16\"></line><line x1=\"16\" y1=\"16\" x2=\"16\" y2=\"16\"></line></svg>"
+    }
+  ]
+}

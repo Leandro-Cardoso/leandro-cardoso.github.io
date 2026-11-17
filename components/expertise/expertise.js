@@ -4,8 +4,9 @@ export async function render(target) {
   if (!target) return;
   await mountTemplate(target, './components/expertise/expertise.html', './components/expertise/expertise.css');
 
-  const [expertiseData, iconsData] = await Promise.all([
+  const [expertiseData, techData, iconsData] = await Promise.all([
     loadJSON('./data/expertise.json'),
+    loadJSON('./data/technologies.json'),
     loadJSON('./data/icons.json')
   ]);
 
@@ -19,10 +20,18 @@ export async function render(target) {
     const card = document.createElement('div');
     card.className = 'expertise-card';
 
-    const iconSvg = iconsData?.categories?.[item.icon] || '';
+    const iconSvg = iconsData?.categories?.[item.icon] || iconsData?.categories?.code || '';
+    
+    // Mapeia as tecnologias buscando diretamente no technologies.json centralizado
     const techPills = (item.technologies || []).map(techId => {
-      const techObj = iconsData?.technologies?.find(t => t.id === techId);
-      return techObj ? `<span class="tech-pill">${techObj.name}</span>` : '';
+      const techObj = techData?.items?.find(t => t.icon === techId);
+      if (!techObj) return '';
+      return `
+        <span class="tech-pill">
+          ${techObj.svg || ''}
+          ${techObj.title}
+        </span>
+      `;
     }).join('');
 
     card.innerHTML = `

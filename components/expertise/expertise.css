@@ -57,7 +57,6 @@
   height: 26px;
   min-width: 26px;
   stroke: var(--accent-yellow);
-  margin: auto;
 }
 
 .expertise-card-title {
@@ -86,19 +85,25 @@
 .tech-pill {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-1);
+  gap: 6px;
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   background-color: var(--bg-input);
   color: var(--accent-yellow);
-  padding: 3px var(--space-2);
+  padding: 4px var(--space-2);
   border-radius: var(--radius-xs);
-  border: var(--border-thin) solid rgba(var(--accent-yellow-rgb), 0.2);
+  border: var(--border-thin) solid rgba(240, 185, 11, 0.2);
+  transition: border-color var(--transition-fast);
 }
 
+.tech-pill:hover {
+  border-color: var(--accent-yellow);
+}
+
+/* Garante o tamanho e alinhamento perfeito do SVG dentro da pílula */
 .tech-pill svg {
-  width: 12px;
-  height: 12px;
-  min-width: 12px;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
   stroke: var(--accent-yellow);
 }
