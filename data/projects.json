@@ -1,5 +1,19 @@
 [
   {
+    "id": "leandro-cardoso.github.io",
+    "title": "Portfólio",
+    "description": "Portfólio desenvolvido para divulgação dos meus projetos e do meu trabalho como Engenheiro de Software e Desenvolvedor.",
+    "category": "Web Page",
+    "technologies": ["javascript", "html", "css"],
+    "customTags": [],
+    "image": "",
+    "featured": true,
+    "githubUrl": "https://github.com/Leandro-Cardoso/leandro-cardoso.github.io",
+    "liveUrl": "https://leandro-cardoso.github.io/",
+    "downloadUrl": "",
+    "docsUrl": ""
+  },
+  {
     "id": "univassouras-ia-pacman",
     "title": "Pacman com IA",
     "description": "Este projeto consiste em desenvolver um jogo do Pacman em Python para gerar dados próprios das partidas e aplicar técnicas de Inteligência Artificial, limpando os dados, definindo o que será previsto e treinando um modelo para antecipar as jogadas do jogador.",
