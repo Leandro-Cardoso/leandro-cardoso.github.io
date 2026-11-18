@@ -17,4 +17,8 @@ export async function render(target) {
   const secondaryBtn = target.querySelector('#hero-secondary-btn');
   secondaryBtn.textContent = hero.secondaryActionText;
   secondaryBtn.href = hero.secondaryActionRoute;
+
+  const tertiaryBtn = target.querySelector('#hero-tertiary-btn');
+  tertiaryBtn.textContent = hero.tertiaryActionText;
+  tertiaryBtn.href = hero.tertiaryActionRoute;
 }

@@ -2,9 +2,6 @@
 
 ## ToDo
 
-* Ajustar cards depois de finalizados
-
-* Botão mais no componente do inicio
 * Adicionar projetos com imagens
 * Criar componente com apenas projetos destacados (para home)
 * Deixar contatos mais bonita (preencher mais tela)

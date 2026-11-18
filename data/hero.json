@@ -5,5 +5,7 @@
   "primaryActionText": "Explorar Projetos",
   "primaryActionRoute": "#/projects",
   "secondaryActionText": "Entrar em Contato",
-  "secondaryActionRoute": "#/contacts"
+  "secondaryActionRoute": "#/contacts",
+  "tertiaryActionText": "Ver Mais",
+  "tertiaryActionRoute": "#/about"
 }
