@@ -23,7 +23,8 @@
 
 .experiences-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/ /* sem limite */
+  grid-template-columns: 1fr; /* 1 coluna no maximo */
   gap: var(--space-6);
 }
 

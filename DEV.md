@@ -4,10 +4,12 @@
 
 * Ajustar cards depois de finalizados
 
+* Botão mais no componente do inicio
 * Adicionar projetos com imagens
 * Criar componente com apenas projetos destacados (para home)
 * Deixar contatos mais bonita (preencher mais tela)
 * Deixar home mais bonita
+* Criar favicon e adicionar
 
 * Botão de impressão/PDF (criar um modelo de currículo com os dados da sobre)
 * Criar blog de tecnologia e programacão

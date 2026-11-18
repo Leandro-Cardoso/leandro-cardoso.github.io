@@ -23,7 +23,8 @@
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/ /* sem limite */
+  grid-template-columns: repeat(auto-fit, minmax(max(300px, calc(50% - var(--space-6))), 1fr)); /* 2 colunas no maximo */
   gap: var(--space-6);
 }
 
