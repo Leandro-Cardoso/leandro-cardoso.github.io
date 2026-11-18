@@ -6,9 +6,10 @@ export async function render(target) {
 
   await mountTemplate(target, './views/projects/projects.html', './views/projects/projects.css');
 
-  const [projects, iconsData] = await Promise.all([
+  const [projects, iconsData, techData] = await Promise.all([
     loadJSON('./data/projects.json'),
-    loadJSON('./data/icons.json')
+    loadJSON('./data/icons.json'),
+    loadJSON('./data/technologies.json')
   ]);
 
   const gearSvg = iconsData?.categories?.gear || '';
@@ -35,8 +36,15 @@ export async function render(target) {
         const query = currentSearchQuery.toLowerCase();
         const matchTitle = p.title.toLowerCase().includes(query);
         const matchDesc = p.description.toLowerCase().includes(query);
-        const matchTag = p.tags.some(t => t.toLowerCase().includes(query));
-        if (!matchTitle && !matchDesc && !matchTag) return false;
+        
+        // Busca tanto nos IDs/nomes das tecnologias quanto nas customTags
+        const matchTech = (p.technologies || []).some(techId => {
+          const techObj = techData?.items?.find(t => t.icon === techId);
+          return techId.toLowerCase().includes(query) || (techObj && techObj.title.toLowerCase().includes(query));
+        });
+        const matchCustomTag = (p.customTags || []).some(t => t.toLowerCase().includes(query));
+
+        if (!matchTitle && !matchDesc && !matchTech && !matchCustomTag) return false;
       }
 
       return true;
@@ -53,17 +61,39 @@ export async function render(target) {
       const card = document.createElement('article');
       card.className = 'project-card';
 
+      // Exibe imagem se existir; caso contrário (ou se falhar), exibe a engrenagem animada
       const mediaHTML = p.image 
-        ? `<img src="${p.image}" alt="${p.title}" class="project-img" loading="lazy" />`
+        ? `<img src="${p.image}" alt="${p.title}" class="project-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+           <div class="project-icon-fallback" style="display: none;" title="Sistema / Código">${gearSvg}</div>`
         : `<div class="project-icon-fallback" title="Sistema / Código">${gearSvg}</div>`;
 
       let linksHTML = '';
       if (p.githubUrl) linksHTML += `<a href="${p.githubUrl}" target="_blank" rel="noopener" class="project-link-btn">GitHub ↗</a>`;
-      if (p.liveUrl) linksHTML += `<a href="${p.liveUrl}" target="_blank" rel="noopener" class="project-link-btn">Demo Web ↗</a>`;
+      if (p.liveUrl) linksHTML += `<a href="${p.liveUrl}" target="_blank" rel="noopener" class="project-link-btn">Abrir ↗</a>`;
       if (p.downloadUrl) linksHTML += `<a href="${p.downloadUrl}" target="_blank" rel="noopener" class="project-link-btn">Download ⬇</a>`;
-      if (p.docsUrl) linksHTML += `<a href="${p.docsUrl}" target="_blank" rel="noopener" class="project-link-btn">Docs 📖</a>`;
+      if (p.docsUrl) linksHTML += `<a href="${p.docsUrl}" target="_blank" rel="noopener" class="project-link-btn">Docs ↗</a>`;
 
-      const tagsHTML = p.tags.map(t => `<span class="project-tag-pill">${t}</span>`).join('');
+      // Pílulas de tecnologias com SVG do technologies.json (fallback apenas com o nome caso a tech ainda não esteja lá, ex: "java")
+      const techPillsHTML = (p.technologies || []).map(techId => {
+        const techObj = techData?.items?.find(t => t.icon === techId);
+        if (techObj) {
+          return `
+            <span class="project-tag-pill is-tech">
+              ${techObj.svg || ''}
+              ${techObj.title}
+            </span>
+          `;
+        }
+        const capitalized = techId.charAt(0).toUpperCase() + techId.slice(1);
+        return `<span class="project-tag-pill is-tech">${capitalized}</span>`;
+      }).join('');
+
+      // Tags complementares
+      const customTagsHTML = (p.customTags || []).map(t => `
+        <span class="project-tag-pill">${t}</span>
+      `).join('');
+
+      const allTagsHTML = techPillsHTML + customTagsHTML;
 
       card.innerHTML = `
         <div class="project-media">
@@ -74,7 +104,7 @@ export async function render(target) {
           <span class="project-category-tag">${p.category}</span>
           <h2 class="project-card-title">${p.title}</h2>
           <p class="project-card-desc">${p.description}</p>
-          <div class="project-tags">${tagsHTML}</div>
+          ${allTagsHTML ? `<div class="project-tags">${allTagsHTML}</div>` : ''}
         </div>
         <footer class="project-footer">
           ${linksHTML}

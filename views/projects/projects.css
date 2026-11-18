@@ -149,7 +149,7 @@
   object-fit: cover;
 }
 
-/* Container e dimensionamento do SVG de Engrenagem Fallback */
+/* Container e dimensionamento do SVG de Engrenagem Fallback com animação */
 .project-icon-fallback {
   display: flex;
   align-items: center;
@@ -171,15 +171,16 @@
   opacity: 1;
 }
 
-/* Estrela de Destaque posicionada exatamente na ponta do topo direito */
+/* Estrela de Destaque adaptável ao modo claro e escuro */
 .project-featured-badge {
   position: absolute;
   top: var(--space-3);
   right: var(--space-3);
   width: 32px;
   height: 32px;
-  background-color: rgba(9, 10, 13, 0.75);
-  backdrop-filter: blur(8px);
+  background-color: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border: var(--border-thin) solid var(--glass-border);
   border-radius: var(--radius-full);
   display: flex;
@@ -188,7 +189,7 @@
   font-size: 14px;
   color: var(--accent-yellow);
   z-index: 2;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--glass-highlight), var(--shadow-sm);
 }
 
 /* Conteúdo do Card */
@@ -224,18 +225,33 @@
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-1);
+  gap: var(--space-2);
   margin-top: var(--space-2);
 }
 
 .project-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   background-color: var(--bg-input);
-  color: var(--text-muted);
-  padding: 2px var(--space-2);
+  color: var(--text-secondary);
+  padding: 3px var(--space-2);
   border-radius: var(--radius-xs);
   border: var(--border-thin) solid var(--border-subtle);
+}
+
+.project-tag-pill.is-tech {
+  color: var(--accent-yellow);
+  border-color: rgba(240, 185, 11, 0.2);
+}
+
+.project-tag-pill.is-tech svg {
+  width: 13px;
+  height: 13px;
+  min-width: 13px;
+  stroke: var(--accent-yellow);
 }
 
 /* Rodapé do Card com Ações Dinâmicas */
