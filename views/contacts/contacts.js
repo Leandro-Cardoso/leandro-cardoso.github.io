@@ -60,9 +60,21 @@ export async function render(target) {
         description: s.description || 'Acessar canal',
         svg: contactIcons[iconKey] || contactIcons.globe || '',
         url: s.url,
-        actionText: 'Visitar ↗'
+        actionText: 'Abrir ↗'
       }));
     });
+  }
+
+  // 4. Mapa com marcador da localização
+  const mapLocation = data.location || 'Saquarema, RJ, Brasil';
+  const mapCard = target.querySelector('#contacts-map-card');
+  const mapIframe = target.querySelector('#contacts-map-iframe');
+  const mapLabel = target.querySelector('#contacts-map-label');
+
+  if (mapCard && mapIframe) {
+    mapLabel.textContent = `📍 ${mapLocation}`;
+    mapIframe.src = `https://maps.google.com/maps?q=${encodeURIComponent(mapLocation)}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+    mapCard.style.display = 'flex';
   }
 }
 

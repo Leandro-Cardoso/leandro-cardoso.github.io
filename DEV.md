@@ -3,7 +3,6 @@
 ## ToDo
 
 * Criar componente com apenas projetos destacados (para home)
-* Deixar contatos mais bonita (preencher mais tela)
 * Deixar home mais bonita
 * Criar favicon e adicionar
 

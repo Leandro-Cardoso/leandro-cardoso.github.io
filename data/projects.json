@@ -1,5 +1,19 @@
 [
   {
+    "id": "tiles-gear",
+    "title": "Tiles Gear",
+    "description": "Game engine 2D zero-dependency em Rust, projetada como biblioteca para desenvolvimento de jogos top-down baseados em tilemaps de múltiplas camadas.",
+    "category": "Engine",
+    "technologies": ["rust"],
+    "customTags": [],
+    "image": "",
+    "featured": true,
+    "githubUrl": "https://github.com/Leandro-Cardoso/tiles-gear",
+    "liveUrl": "",
+    "downloadUrl": "",
+    "docsUrl": "https://leandro-cardoso.github.io/tiles-gear"
+  },
+  {
     "id": "leandro-cardoso.github.io",
     "title": "Portfólio",
     "description": "Portfólio desenvolvido para divulgação dos meus projetos e do meu trabalho como Engenheiro de Software e Desenvolvedor.",
