@@ -18,6 +18,10 @@
     "/contacts": {
       "view": "contacts",
       "pageTitle": "Contatos | Leandro Cardoso DEV"
+    },
+    "/blog": {
+      "view": "blog",
+      "pageTitle": "Blog | Leandro Cardoso DEV"
     }
   }
 }

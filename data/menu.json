@@ -18,5 +18,10 @@
     "label": "Contatos",
     "route": "/contacts",
     "href": "#/contacts"
+  },
+  {
+    "label": "Blog",
+    "route": "/blog",
+    "href": "#/blog"
   }
 ]
