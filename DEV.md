@@ -2,8 +2,7 @@
 
 ## ToDo
 
-* Deixar home mais bonita (melhorar tema claro)
-* Criar favicon e adicionar
+* Melhorar tema claro
 
 * Botão de impressão/PDF (criar um modelo de currículo com os dados da sobre)
 * Criar blog de tecnologia e programacão
