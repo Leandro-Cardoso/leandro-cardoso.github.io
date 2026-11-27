@@ -1,6 +1,7 @@
 import { mountTemplate } from '../../js/loader.js';
 import { render as renderLogo } from '../logo/logo.js';
 import { render as renderMenu } from '../menu/menu.js';
+import { render as renderPrintButton } from '../print-button/print-button.js';
 import { render as renderThemeSwitcher } from '../theme-switcher/theme-switcher.js';
 
 export async function render(target) {
@@ -13,6 +14,7 @@ export async function render(target) {
   await Promise.all([
     renderLogo(target.querySelector('#logo-slot')),
     renderMenu(target.querySelector('#menu-slot')),
+    renderPrintButton(target.querySelector('#print-button-slot')),
     renderThemeSwitcher(target.querySelector('#theme-switcher-slot'))
   ]);
 }

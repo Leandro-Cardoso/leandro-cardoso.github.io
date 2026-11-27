@@ -1,0 +1,42 @@
+.print-switcher {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  background-color: var(--bg-input);
+  border: var(--border-thin) solid var(--glass-border);
+  border-radius: var(--radius-full);
+}
+
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: var(--border-thin) solid transparent;
+  background: transparent;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+  transition: all var(--transition-fast);
+}
+
+.print-btn:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-surface-hover);
+}
+
+.print-icon-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.print-icon-slot svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
