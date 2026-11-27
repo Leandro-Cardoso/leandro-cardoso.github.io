@@ -2,6 +2,7 @@
 
 ## ToDo
 
+* Botão para gerar currículo simples.
 * Criar blog de tecnologia e programacão
 * Componente de postagens recentes (aparecer na lateral se tiver bastante espaco sobrando de tela, se não embaixo)
 

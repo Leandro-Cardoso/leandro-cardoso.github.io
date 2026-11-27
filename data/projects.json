@@ -20,7 +20,7 @@
     "category": "Web Page",
     "technologies": ["javascript", "html", "css"],
     "customTags": [],
-    "image": "",
+    "image": "./assets/images/projects/leandro-cardoso.png",
     "featured": true,
     "githubUrl": "https://github.com/Leandro-Cardoso/leandro-cardoso.github.io",
     "liveUrl": "https://leandro-cardoso.github.io/",
