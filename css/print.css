@@ -1,0 +1,105 @@
+/* =======================================
+   CONFIGURAÇÃO DE PÁGINA A4
+   ======================================= */
+
+@page {
+  size: A4 portrait;
+  margin: 1.2cm;
+}
+
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+/* =======================================
+   RESET DE LAYOUT
+   ======================================= */
+
+body {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+  font-size: 10.5pt !important;
+  line-height: 1.45 !important;
+}
+
+main,
+.error-view,
+.home-view,
+.about-view,
+.projects-view,
+.contacts-view,
+.blog-view {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: var(--space-5) !important;
+}
+
+/* =======================================
+   OCULTAR ELEMENTOS
+   ======================================= */
+
+.no-print,
+nav,
+aside,
+button,
+.btn-primary,
+.btn-secondary,
+.error-btn,
+.theme-switcher,
+.projects-toolbar,
+.projects-search-slot,
+.cert-view-btn,
+#contacts-map-card {
+  display: none !important;
+}
+
+/* =======================================
+   CARDS & QUEBRA DE PÁGINA
+   ======================================= */
+
+.bio-unified-card,
+.education-card,
+.language-card,
+.cert-card,
+.project-card,
+.contacts-card,
+.contact-channel-btn {
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.bio-credentials-band {
+  background-color: transparent !important;
+  padding: var(--space-5) !important;
+}
+
+/* Grids */
+.certifications-grid,
+.projects-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: var(--space-4) !important;
+}
+
+.project-media {
+  height: 110px !important;
+}
+
+/* =======================================
+   LINKS
+   ======================================= */
+
+.project-link-btn::after,
+.contact-channel-btn::after {
+  content: " (" attr(href) ")";
+  font-family: var(--font-mono);
+  font-size: 8pt;
+  font-weight: 400;
+  color: var(--text-muted);
+  word-break: break-all;
+}

@@ -47,20 +47,8 @@
   border-color: var(--accent-yellow);
 }
 
-/* Destaque sutil no topo para formação em andamento */
 .education-card.is-active {
-  border-color: rgba(240, 185, 11, 0.35);
-}
-
-.education-card.is-active::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--gradient-brand);
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  border-color: var(--accent-yellow);
 }
 
 .education-logo-box {
@@ -121,7 +109,7 @@
 
 .education-card.is-active .education-status-badge {
   color: var(--accent-yellow);
-  border-color: rgba(240, 185, 11, 0.3);
+  border-color: var(--accent-yellow);
 }
 
 .education-course {
