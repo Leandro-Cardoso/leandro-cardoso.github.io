@@ -6,11 +6,11 @@
   color-scheme: light dark;
   
   /* Fundos e Superfícies */
-  --bg-primary: light-dark(#D5D9E0, #090A0D);
-  --bg-secondary: light-dark(rgba(223, 227, 234, 0.82), rgba(15, 17, 22, 0.72));
-  --bg-surface: light-dark(rgba(235, 238, 243, 0.78), rgba(24, 27, 34, 0.55));
-  --bg-surface-hover: light-dark(rgba(212, 217, 226, 0.9), rgba(36, 40, 50, 0.75));
-  --bg-input: light-dark(rgba(208, 213, 222, 0.8), rgba(20, 23, 29, 0.8));
+  --bg-primary: light-dark(#efefef, #090A0D);
+  --bg-secondary: light-dark(rgb(252, 252, 252), rgba(15, 17, 22, 0.72));
+  --bg-surface: light-dark(rgb(252, 252, 252), rgba(24, 27, 34, 0.55));
+  --bg-surface-hover: light-dark(rgb(240, 240, 240), rgba(36, 40, 50, 0.75));
+  --bg-input: light-dark(rgba(255, 255, 255, 0.8), rgba(20, 23, 29, 0.8));
   
   /* Vidros (Glassmorphism) */
   --glass-blur: blur(16px);
